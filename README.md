@@ -31,3 +31,5 @@ overriding some properties in these components to make them look a little more l
 ## Next Steps
 
 Now that our application isn't so ugly, let's abstract the card in our HomeView into several components of our own.
+
+Checkout step/3.
