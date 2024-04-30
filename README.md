@@ -50,4 +50,9 @@ Let's go over the directory structure and files that showed up.
 - **README.md**: This file contains the project documentation.
 - **tsconfig.*.json**: This file contains the TypeScript configuration for the project. TypeScript is a superset of JavaScript that adds static types.
 - **vite.config.ts**: This file contains the Vite configuration for the project. Vite is a build tool that focuses on speed and simplicity.
-- 
+
+## Next Steps
+
+Well now that we have a project setup and running, and we understand the anatomy of a Vue project, our app is looking a little sad right now.
+
+Let's continue to Step 2 to add some style and structure to our app!
