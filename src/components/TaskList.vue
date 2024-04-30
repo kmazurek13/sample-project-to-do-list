@@ -17,16 +17,14 @@
 
 <script setup lang="ts">
 import TaskListItem from "@/components/TaskListItem.vue";
-import type Task from "@/models/Task";
-import { computed, reactive } from "vue";
+import { computed } from "vue";
+import { useTodoStore } from "@/stores/todo";
+import { storeToRefs } from "pinia";
 
-const tasks: Task[] = reactive([
-  { id: 1, description: "Learn Vue 3", completed: false },
-  { id: 2, description: "Learn TypeScript", completed: false },
-  { id: 3, description: "Build Something Awesome", completed: false }]);
+const { tasks } = storeToRefs(useTodoStore());
 
-const tasksCompleted = computed(() => tasks.filter((task) => task.completed).length);
-const tasksTotal = computed(() => tasks.length);
+const tasksCompleted = computed(() => tasks.value.filter((task) => task.completed).length);
+const tasksTotal = computed(() => tasks.value.length);
 </script>
 
 <style scoped>
