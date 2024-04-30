@@ -2,57 +2,32 @@
 
 A simple to-do list application for demonstrating Vue 3 + TypeScript.
 
-This is step 1. We'll go over project setup and the anatomy of a new Vue project.
+This is step 2. If you're stilling running the project, you'll notice our app is looking a little better.
 
-## Recommended IDE Setup
+In this step, we'll go over choosing a set of components to start with and applying some of them.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Step 2: Adding Style and Structure
 
-## Type Support for `.vue` Imports in TS
+You can use some of the popular component libraries that exist to give yourself a headstart on building your app.
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+I've chosen Vuetify for this project. Vuetify is a Material Design component framework for Vue. It aims to provide
+clean, semantic and reusable components that make building your application a breeze.
 
+Other popular component libraries include:
 
-## Project Setup
+- PrimeVue
+- Tailwind CSS
+- BootstrapVue
 
-```sh
-npm install
-```
+You can find the vuetify documentation [here](https://vuetifyjs.com/en/).
 
-### Compile and Hot-Reload for Development
+I've used a few of their components to start molding our app into something more defined.
 
-```sh
-npm run dev
-```
+Now we have a navigation bar at the top, and our home page content is contained in a card.
 
-Now you're running this project live in your development environment!
-
-## Anatomy of a Vue Project
-
-Let's go over the directory structure and files that showed up.
-
-- **node_modules**: This directory was created when you ran `npm install`. Think of it like your .m2/repository if you're familiar with Maven.
-- **public**: This directory will contain any public assets useful outside Vue. I.E. favicon.ico
-- **src**: This directory will contain all of our .vue, .ts, .js source code.
-  - **assets**: This directory will contain any non-code assets useful to the Vue application.
-  - **components**: This directory will contain any common components.
-  - **router**: This directory will contain any code relevant to application routing.
-  - **stores**: This directory will contain any store modules for tracking different state groupings.
-  - **views**: This directory will contain any views we create. For a generic site, think "Home", "About", etc.
-  - **App.vue**: This template contains any elements common to the entire application.
-  - **main.ts**: This script is responsible for initializing the Vue application.
-- **.eslintrc.cjs**: This file contains the ESLint configuration for the project. ESLint is a linter that helps enforce code style and best practices.
-- **.gitignore**: This file contains a list of files and directories that should be ignored by Git.
-- **.prettierrc.json**: This file contains the Prettier configuration for the project. Prettier is a code formatter that helps enforce code style.
-- **index.html**: This file is the browser entry point for the Vue application.
-- **package.json**: This file contains the project metadata and dependencies interpreted by npm.
-- **package-lock.json**: This file contains the exact dependency tree installed by npm.
-- **README.md**: This file contains the project documentation.
-- **tsconfig.*.json**: This file contains the TypeScript configuration for the project. TypeScript is a superset of JavaScript that adds static types.
-- **vite.config.ts**: This file contains the Vite configuration for the project. Vite is a build tool that focuses on speed and simplicity.
+If you look at the HTML code in HomeView.vue, you'll see a few Vuetify components at work. You'll notice I've started
+overriding some properties in these components to make them look a little more like the design I have in mind.
 
 ## Next Steps
 
-Well now that we have a project setup and running, and we understand the anatomy of a Vue project, our app is looking a little sad right now.
-
-Let's continue to Step 2 to add some style and structure to our app!
+Now that our application isn't so ugly, let's abstract the card in our HomeView into several components of our own.
