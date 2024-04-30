@@ -2,24 +2,21 @@
 
 A simple to-do list application for demonstrating Vue 3 + TypeScript.
 
-This is step 5.
+This is step 6.
 
-In this step, we'll refactor our application to use Pinia, a simple state management library for Vue 3.
+In this step, we'll use everything we've learned to pull together a fully functional to-do list application.
 
-## Step 5: Adding State Management with Pinia
+## Step 6: Adding and Editing Tasks
 
-You'll now notice when you check tasks off and navigate between pages, the state of the tasks is persistent.
+In this step, we'll add the ability to add and edit tasks.
 
-This is because we've introduced state management. See how the code for `src/stores/todo.ts`
-and `src/components/TaskList.vue` have changed.
-
-By offloading reactive elements to the store, we can now access the state of the tasks from anywhere in our application
-regardless of the state of individual components.
+I've added a new component, `AddModifyTaskDialog.vue`, which will be used to add and edit tasks.
+This component is invoked by the `ToDoView.vue` component which now a data table and add/edit/delete buttons.
 
 ## Next Steps
 
-Ok. We've added state management to our application. Now we can worry about manipulating our to-do list.
+Now we have a fully functional to-do list application.
 
-In step/6 we'll bring everything together and add the ability to add, edit, and delete tasks.
+Hopefully you learned a few things about Vue 3 and TypeScript along the way.
 
-Checkout step/6.
+Now go apply what you've learned.
